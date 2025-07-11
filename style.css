@@ -1180,3 +1180,12 @@ text-decoration: none;
     font-size: 1.5rem;
   }
 }
+
+@media (max-width: 600px) {
+  .slides {
+    margin-top: 100px;
+  }
+  .intro-content {
+    margin-top: 24px;
+  }
+}
