@@ -1,4 +1,4 @@
-var introText = 'Hi There! I am Vinay Guleria, a student of BCA from Chandigarh University. I am a passionate and dedicated student with a keen interest in learning new things. I am a quick learner and I am always looking for new challenges. I am a team player and I am always looking for new opportunities to learn and grow.';
+var introText = 'Hi There! I am Vinay Guleria, a student of BCA from Chandigarh University. I am a passionate and dedicated student with a keen interest in learning new things.';
 var introTitle = 'Introduction';
 var educationTitle = 'Education';
 var projectsTitle = 'Projects';
