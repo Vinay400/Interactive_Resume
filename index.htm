@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive Resume</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <section class="personal_details slides slide1">
+                <nav class="navbar" id="nav-top">
+                    <div class="navbar-logo">
+                        <img src="https://api.iconify.design/mdi:account-circle.svg?color=%23e08e79" alt="Logo" />
+                        Vinay Guleria
+                    </div>
+                    <ul class="navbar-links">
+                        <li><a class="anchor-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">Contact</a></li>
+                        <li><a class="anchor-button" onclick="document.getElementById('education').scrollIntoView({behavior: 'smooth'});">Education</a></li>
+                        <li><a class="anchor-button" onclick="document.getElementById('work-experience').scrollIntoView({behavior: 'smooth'});">Work Experience</a></li>
+                        <li><a class="anchor-button" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'});">Projects</a></li>
+                    </ul>
+                </nav>
+                <div class="image-section">
+                    <div class="profile-bg"></div>
+                    <img id="profilepic" src="./public/images/profilepic2.jpg" alt="Profile Picture">
+                </div>
+                <div class="intro-content">
+                    <h2 id="intro-title"></h2>
+                    <p class="tagline">Aspiring Software Developer & Tech Enthusiast</p>
+                    <h3 class="intro-heading">Introduction</h3>
+                    <p id="introduction"></p>
+                </div>
+                <div class="scroll-down" onclick="document.getElementById('education').scrollIntoView({behavior: 'smooth'});">
+                    <span>&#8595;</span>
+                </div>
+            </section>
+            <svg class="section-divider" viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="url(#wave1)"/><defs><linearGradient id="wave1" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox"><stop offset="0%" stop-color="#fff6f2"/><stop offset="100%" stop-color="#ffe0d2"/></linearGradient></defs></svg>
+            <section class="slides" id="education">
+                <div class="education-timeline">
+                    <h2 id="education-title"></h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>BCA</h3>
+                                <span class="timeline-institution">Chandigarh University</span>
+                                <span class="timeline-year">2022–2025</span>
+                                <ul>
+                                    <li>CGPA: 7.5/10</li>
+                                    <li>Relevant Courses: Data Structures, Web Development, Web Designing</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>12th</h3>
+                                <span class="timeline-institution">Baba Balak Nath Sr. Sec. School, Chakmoh (Himachal Pradesh)</span>
+                                <span class="timeline-year">2020–2021</span>
+                                <ul>
+                                    <li>Science Stream, 76%</li>
+                                    <li>School Captain, Science Club</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>10th</h3>
+                                <span class="timeline-institution">Govt. High School, Chakmoh (Himachal Pradesh)</span>
+                                <span class="timeline-year">2018–2019</span>
+                                <ul>
+                                    <li>92%</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-down" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+                        <span>&#8595;</span>
+                    </div>
+                </div>
+            </section>
+            <!-- Work Experience Section -->
+            <section class="slides" id="work-experience">
+                <div class="education-timeline">
+                    <h2 id="work-title">Work Experience</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Software Developer Intern</h3>
+                                <span class="timeline-institution">Unified Mentor</span>
+                                <span class="timeline-year">May 2025 – Aug 2025</span>
+                                <ul>
+                                    <li>Worked on frontend features using React, Tailwind, MaterialUI</li>
+                                    <li>Intergrated Backend Database Services like Postgresql, MongoDB in Porjects</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Web Developer</h3>
+                                <span class="timeline-institution">Freelance</span>
+                                <span class="timeline-year">Jan 2023 – May 2024</span>
+                                <ul>
+                                    <li>Developed responsive websites for small businesses</li>
+                                    <li>Managed client requirements and delivered projects on time</li>
+                                    <li>Used HTML, CSS, JavaScript, and Firebase</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-down" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+                        <span>&#8595;</span>
+                    </div>
+                </div>
+            </section>
+            <svg class="section-divider" viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="url(#wave2)"/><defs><linearGradient id="wave2" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox"><stop offset="0%" stop-color="#ffe0d2"/><stop offset="100%" stop-color="#fff6f2"/></linearGradient></defs></svg>
+            <section class="slides" id="projects">
+                <div class="projects-list">
+                    <h2 id="projects-title"></h2>
+                    <div class="project">
+                        <div class="project-information">
+                            <a href="https://e-mart-kappa.vercel.app/"><span class="project-name">E-Mart</span></a><br>
+                            <span class="project-time">Feb 2025 - Present</span><br>
+                            <span class="project-desc">E-Mart is a full-stack e-commerce platform built with React, TypeScript, and Firebase. It provides a seamless shopping experience for customers while offering robust management tools for vendors and administrators.</span>
+                            <span class="project-skills" data-tooltip="Web Development, Firebase Authentication, Firestore Database, React + vite + typescript">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+                                    <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAspJREFUWEftllmoTmEUhp9DkTKVUBQpbgwR4YqMd2ZCohAlZbowZR4SIVPJhVyZjszcGTKkyFiIJHc6dZBjSCjDek/rr6+///+/b592nZR9uffaa73fu971rq+KRn6qGrk+/wH8kwx0ABYBY4AerqFXwGXgAPAui66yMjAFOAK0KlPkMzAHOJsKIgsAFT8F9cI9D+w1Fh54oYHAUmA88BtQ7LkUEKkARPtrP/kKYGeZ5CuB7cAnoDvwPgYiFcAWYK2ffGIk6UVgLLAZ2JAXgCdGaV9gGHAzknQ4cN3a8RjonxeAL0BLb8HXSFIJVGLUP63zAvDRRNc2EYCKSgMC0SYvAA+dTtF7I5J0BHANeAQMyAvAGmArcAGYEEl6yU1qk8VtzAtAR+C5OV07YBWwo0zi1cA284Q6H8MPeQFQHpnMGaCpUatT7gHue4FB1vdlfnIZ0SRnK1Y/8zpW4tPuhqWS6+SzU4srQaoRKXayTcFuoGtRZY1buIyKaf/j8SVrpQBo4r6vDahHlnwQuAW8ATSi4TPdjajWXxYDkK1rUk6mMrAPWBxUUBu0aAYDsmWJsvCo+HEXrKZmPjDSP14FDrul9zLWZghEjAHRrp7/9MTqr0zmKLDABTnORak6Op08oHdEfc8cWG0lAM29t12AhcAhp22qJ/9l9rzLZ/17UHCax/3w0x7zbzMNsJaa8oqp6lgLFHTCxPfUtmA/3/PaB3ddvHOBeyVOKgbU4+UOMAzRKpeHaFnVt6YSA0Ko0y4B9gdZOtuVTEoPT63PBbEVQjsBNcAdBz8E0Lu3IaJKAKTwbnYL6gm8iPS0EoDbDm5oVgDfjK4WvlI166lPoQWlbk6FG5NiRsVakFqwOC4U4XqfGMXM8ltSs1QRNgRAex/DPpGfX7pQa2I+kBVEaEQauXkmwtGe5Iob0Tog2YiyAlB87lbcEBDhPxWX0V+zPZYf12gFCgAAAABJRU5ErkJggg==" x="0" y="0" width="32" height="32"/>
+                                </svg>
+                            </span>
+                            <button type="button" class="open-modal-btn" data-project="e-mart">More Info</button>
+                        </div>
+                        <div class="project-img">
+                            <img id="project1img" src="https://res.cloudinary.com/doj1ogn2r/image/upload/v1748104836/E-mart_dchlcf.png">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-information">
+                            <a href="https://www.organicbypooja.in/"><span class="project-name">Organic By Pooja</span></a><br>
+                            <span class="project-time">Dec 2024 - Feb 2025</span><br>
+                            <span class="project-desc">Official Site Of Organic By Pooja A Women Salon And Makeup Accessories.</span>
+                            <span class="project-skills" data-tooltip="Firebase Authentication, Firestore Database, APIs">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+                                    <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAspJREFUWEftllmoTmEUhp9DkTKVUBQpbgwR4YqMd2ZCohAlZbowZR4SIVPJhVyZjszcGTKkyFiIJHc6dZBjSCjDek/rr6+///+/b592nZR9uffaa73fu971rq+KRn6qGrk+/wH8kwx0ABYBY4AerqFXwGXgAPAui66yMjAFOAK0KlPkMzAHOJsKIgsAFT8F9cI9D+w1Fh54oYHAUmA88BtQ7LkUEKkARPtrP/kKYGeZ5CuB7cAnoDvwPgYiFcAWYK2ffGIk6UVgLLAZ2JAXgCdGaV9gGHAzknQ4cN3a8RjonxeAL0BLb8HXSFIJVGLUP63zAvDRRNc2EYCKSgMC0SYvAA+dTtF7I5J0BHANeAQMyAvAGmArcAGYEEl6yU1qk8VtzAtAR+C5OV07YBWwo0zi1cA284Q6H8MPeQFQHpnMGaCpUatT7gHue4FB1vdlfnIZ0SRnK1Y/8zpW4tPuhqWS6+SzU4srQaoRKXayTcFuoGtRZY1buIyKaf/j8SVrpQBo4r6vDahHlnwQuAW8ATSi4TPdjajWXxYDkK1rUk6mMrAPWBxUUBu0aAYDsmWJsvCo+HEXrKZmPjDSP14FDrul9zLWZghEjAHRrp7/9MTqr0zmKLDABTnORak6Op08oHdEfc8cWG0lAM29t12AhcAhp22qJ/9l9rzLZ/17UHCax/3w0x7zbzMNsJaa8oqp6lgLFHTCxPfUtmA/3/PaB3ddvHOBeyVOKgbU4+UOMAzRKpeHaFnVt6YSA0Ko0y4B9gdZOtuVTEoPT63PBbEVQjsBNcAdBz8E0Lu3IaJKAKTwbnYL6gm8iPS0EoDbDm5oVgDfjK4WvlI166lPoQWlbk6FG5NiRsVakFqwOC4U4XqfGMXM8ltSs1QRNgRAex/DPpGfX7pQa2I+kBVEaEQauXkmwtGe5Iob0Tog2YiyAlB87lbcEBDhPxWX0V+zPZYf12gFCgAAAABJRU5ErkJggg==" x="0" y="0" width="32" height="32"/>
+                                </svg>
+                            </span>
+                            <button type="button" class="open-modal-btn" data-project="organic">More Info</button>
+                        </div>
+                        <div class="project-img">
+                            <img id="project1img" src="https://res.cloudinary.com/doj1ogn2r/image/upload/v1748104836/organicByPooja_euomdy.png">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-information">
+                            <a href="https://blogpostsw.netlify.app/"><span class="project-name">BlogPost</span></a><br>
+                            <span class="project-time">June 2025 - Present</span><br>
+                            <span class="project-desc">A modern, responsive blog website built with React, Material UI, and Tailwind CSS. This project allows users to browse featured posts, read blog articles, learn about the author, and connect via a contact form. The site is designed for personal blogging and storytelling, with a clean and engaging UI.</span>
+                            <span class="project-skills" data-tooltip="Tailwind css, Material UI,">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+                                    <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAspJREFUWEftllmoTmEUhp9DkTKVUBQpbgwR4YqMd2ZCohAlZbowZR4SIVPJhVyZjszcGTKkyFiIJHc6dZBjSCjDek/rr6+///+/b592nZR9uffaa73fu971rq+KRn6qGrk+/wH8kwx0ABYBY4AerqFXwGXgAPAui66yMjAFOAK0KlPkMzAHOJsKIgsAFT8F9cI9D+w1Fh54oYHAUmA88BtQ7LkUEKkARPtrP/kKYGeZ5CuB7cAnoDvwPgYiFcAWYK2ffGIk6UVgLLAZ2JAXgCdGaV9gGHAzknQ4cN3a8RjonxeAL0BLb8HXSFIJVGLUP63zAvDRRNc2EYCKSgMC0SYvAA+dTtF7I5J0BHANeAQMyAvAGmArcAGYEEl6yU1qk8VtzAtAR+C5OV07YBWwo0zi1cA284Q6H8MPeQFQHpnMGaCpUatT7gHue4FB1vdlfnIZ0SRnK1Y/8zpW4tPuhqWS6+SzU4srQaoRKXayTcFuoGtRZY1buIyKaf/j8SVrpQBo4r6vDahHlnwQuAW8ATSi4TPdjajWXxYDkK1rUk6mMrAPWBxUUBu0aAYDsmWJsvCo+HEXrKZmPjDSP14FDrul9zLWZghEjAHRrp7/9MTqr0zmKLDABTnORak6Op08oHdEfc8cWG0lAM29t12AhcAhp22qJ/9l9rzLZ/17UHCax/3w0x7zbzMNsJaa8oqp6lgLFHTCxPfUtmA/3/PaB3ddvHOBeyVOKgbU4+UOMAzRKpeHaFnVt6YSA0Ko0y4B9gdZOtuVTEoPT63PBbEVQjsBNcAdBz8E0Lu3IaJKAKTwbnYL6gm8iPS0EoDbDm5oVgDfjK4WvlI166lPoQWlbk6FG5NiRsVakFqwOC4U4XqfGMXM8ltSs1QRNgRAex/DPpGfX7pQa2I+kBVEaEQauXkmwtGe5Iob0Tog2YiyAlB87lbcEBDhPxWX0V+zPZYf12gFCgAAAABJRU5ErkJggg==" x="0" y="0" width="32" height="32"/>
+                                </svg>
+                            </span>
+                            <button type="button" class="open-modal-btn" data-project="blogpost">More Info</button>
+                        </div>
+                        <div class="project-img">
+                            <img id="project1img" src="https://res.cloudinary.com/doj1ogn2r/image/upload/v1752225043/Screenshot_228_ykf0l0.png">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-information">
+                            <a href="https://charming-lamington-c1b952.netlify.app/"><span class="project-name">Chat-Buddy</span></a><br>
+                            <span class="project-time">June 2025 - Present</span><br>
+                            <span class="project-desc">Chat Buddy is a real-time chat application that enables seamless communication between users. It supports multiple chat rooms, allowing users to join or create rooms for group conversations. The project is built using HTML, CSS, and JavaScript for the frontend, with WebSockets for real-time messaging and MongoDB as the database for storing user and message data.</span>
+                            <span class="project-skills" data-tooltip="Html , Css , JavaScript , WebSockets(SocketIO)">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+                                    <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAspJREFUWEftllmoTmEUhp9DkTKVUBQpbgwR4YqMd2ZCohAlZbowZR4SIVPJhVyZjszcGTKkyFiIJHc6dZBjSCjDek/rr6+///+/b592nZR9uffaa73fu971rq+KRn6qGrk+/wH8kwx0ABYBY4AerqFXwGXgAPAui66yMjAFOAK0KlPkMzAHOJsKIgsAFT8F9cI9D+w1Fh54oYHAUmA88BtQ7LkUEKkARPtrP/kKYGeZ5CuB7cAnoDvwPgYiFcAWYK2ffGIk6UVgLLAZ2JAXgCdGaV9gGHAzknQ4cN3a8RjonxeAL0BLb8HXSFIJVGLUP63zAvDRRNc2EYCKSgMC0SYvAA+dTtF7I5J0BHANeAQMyAvAGmArcAGYEEl6yU1qk8VtzAtAR+C5OV07YBWwo0zi1cA284Q6H8MPeQFQHpnMGaCpUatT7gHue4FB1vdlfnIZ0SRnK1Y/8zpW4tPuhqWS6+SzU4srQaoRKXayTcFuoGtRZY1buIyKaf/j8SVrpQBo4r6vDahHlnwQuAW8ATSi4TPdjajWXxYDkK1rUk6mMrAPWBxUUBu0aAYDsmWJsvCo+HEXrKZmPjDSP14FDrul9zLWZghEjAHRrp7/9MTqr0zmKLDABTnORak6Op08oHdEfc8cWG0lAM29t12AhcAhp22qJ/9l9rzLZ/17UHCax/3w0x7zbzMNsJaa8oqp6lgLFHTCxPfUtmA/3/PaB3ddvHOBeyVOKgbU4+UOMAzRKpeHaFnVt6YSA0Ko0y4B9gdZOtuVTEoPT63PBbEVQjsBNcAdBz8E0Lu3IaJKAKTwbnYL6gm8iPS0EoDbDm5oVgDfjK4WvlI166lPoQWlbk6FG5NiRsVakFqwOC4U4XqfGMXM8ltSs1QRNgRAex/DPpGfX7pQa2I+kBVEaEQauXkmwtGe5Iob0Tog2YiyAlB87lbcEBDhPxWX0V+zPZYf12gFCgAAAABJRU5ErkJggg==" x="0" y="0" width="32" height="32"/>
+                                </svg>
+                            </span>
+                            <button class="open-modal-btn" data-project="chatbuddy">More Info</button>
+                        </div>
+                        <div class="project-img">
+                            <a href="https://charming-lamington-c1b952.netlify.app/" target="_blank"><img id="project1img" src="https://res.cloudinary.com/doj1ogn2r/image/upload/v1752226904/Screenshot_229_ybaevs.png" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-down" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">
+                    <span>&#8595;</span>
+                </div>
+            </section>
+            <!-- Modal Structure -->
+            <div id="project-modal" class="modal">
+              <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+                <p><strong>Live URL:</strong> <a id="modal-live-url" href="#" target="_blank"></a></p>
+                <p><strong>GitHub Repo:</strong> <a id="modal-github-url" href="#" target="_blank"></a></p>
+                <p><strong>Tech Stack:</strong> <span id="modal-tech"></span></p>
+              </div>
+            </div>
+            <svg class="section-divider" viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="url(#wave3)"/><defs><linearGradient id="wave3" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox"><stop offset="0%" stop-color="#fff6f2"/><stop offset="100%" stop-color="#ffe0d2"/></linearGradient></defs></svg>
+            <section class="contact-section slides" id="contact">
+                <button id="scroll-to-top" title="Back to top" style="margin: 40px auto 0 auto;" onclick="document.getElementById('nav-top').scrollIntoView({behavior: 'smooth'});"> <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 26V6M16 6l-8 8M16 6l8 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></button>
+                <div class="contact-content">
+                    <h2>Get in Touch</h2>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="db91e7b4-ebbe-468e-921a-8808e9af8868">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                        <button type="submit">Submit Form</button>
+                    </form>
+
+                    <div class="or-divider">or</div>
+
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/vinay-guleria-2b45bb243/" target="_blank">
+                            <img src="https://api.iconify.design/simple-icons:linkedin.svg?color=%230072b1" alt="LinkedIn" class="social-icon">
+                        </a>
+                        <a href="https://github.com/Vinay400" target="_blank">
+                            <img src="https://api.iconify.design/simple-icons:github.svg?color=%23181717" alt="GitHub" class="social-icon">
+                        </a>
+                        <a href="https://wa.me/918219440142" target="_blank">
+                            <img src="https://api.iconify.design/simple-icons:whatsapp.svg?color=%2325d366" alt="Whatsapp" class="social-icon">
+                        </a>
+                    </div>
+                </div>
+                
+            </section>
+            <!-- Thank You Modal -->
+            <div id="thankyou-modal" class="modal">
+              <div class="modal-content">
+                <span class="close-thankyou-modal">&times;</span>
+                <h2>Thank You!</h2>
+                <p>Your message has been sent successfully. I appreciate your interest and will get back to you soon!</p>
+              </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html> 
